@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+/*reset*/
+body{
+    padding: 0;
+    margin: 0;
+    background-color: antiquewhite;
+    box-sizing: border-box;
+    font-family: 'Dosis', 'sans-serif';
+}
+
+.carousel{
+    border-left: 50px solid antiquewhite;
+    border-right: 50px solid antiquewhite;
+    @media screen and (max-width: 768px) {
+        border-left: 10px solid antiquewhite;
+        border-right: 10px solid antiquewhite;
+    }
+      
+    background-color: white;
+    div{
+        img{
+            object-fit: contain;
+            width: 100%;
+            height: 400px;
+        }
+    }
+}
+
+#galeria{
+ img{
+ max-width: 100%;
+ height: 250px;
+  /* o cualquier otro valor según tus necesidades */
+}
+}
+@media screen  and (max-width:420px){ 
+ 
+                        .pagos{
+                            display: none;
+                        }
+
+                        .whatsapp  {
+                            display: none;
+                        }
+   }
+footer{
+    display: flex;
+    background: rgb(224, 132, 132) !important; 
+    width:100%;
+    height: 20vh;
+    justify-content: space-around;
+  }

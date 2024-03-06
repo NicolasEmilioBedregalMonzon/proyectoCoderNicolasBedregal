@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400&display=swap');
+/*reset*/
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis', 'sans-serif';
+    
+    
+}
+.navbar{
+ background: rgb(244, 168, 168) !important;
+ ul a:hover{  
+    border-bottom: 5px solid black;
+ }
+}
+.grilla{
+    display:grid;
+    grid-template-columns: 1fr,1fr,1fr;
+    grid-template-rows: 20%,80%,20%;
+    grid-template-areas: "titulo titulo titulo"
+                         " imagen imagen cuatro"   
+                         "imagen imagen dos ";                        
+                       .titulo{
+                           grid-area: titulo;
+                           background: rgb(233, 225, 225);
+                            }
+
+                        .dos{
+                           grid-area: dos;
+                           background:  rgb(233, 225, 225);
+                           padding: 20px;
+                       }  
+                       .cuatro{
+                           grid-area:cuatro;
+                           background: rgb(233, 225, 225); padding: 20px;
+                       } 
+                       .imagen{
+                           grid-area: imagen;    
+                       }
+                       h2{  border-bottom: 2px solid black
+                       } 
+}       
+     @media screen  and (max-width:420px){ 
+                        .grilla{
+                        display:grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows:repeat(4,auto);
+                        grid-template-areas: "titulo "
+                                              "cuatro"
+                                             " imagen"   
+                                             " dos ";
+                                     
+                        
+                                            }
+                                            .pagos{
+                                                display: none;
+                                            }
+
+                                            .whatsapp  {
+                                                display: none;
+                                            }
+                       }
+/* barra de navegacion */
+
+/* icono de contactos de wpp */
+
+.whatsapp  {
+    z-index: 10000000;
+    position:fixed;
+    right: 0px;
+    bottom: 20px;
+  
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+ /* footer  pie de pagina  */
+footer{
+  display: flex;
+  background: rgb(224, 132, 132) !important; 
+  width:100%;
+  justify-content: space-around;
+  ul{
+    height: 100%;
+
+  }
+  
+}

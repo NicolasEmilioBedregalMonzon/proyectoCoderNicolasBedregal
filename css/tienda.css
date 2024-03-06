@@ -1,0 +1,28 @@
+.store{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.btn{
+    background-color: antiquewhite;
+    a:active{
+        box-shadow:none;
+    }
+
+    
+}
+
+
+footer{
+   
+    display: flex;
+    background: rgb(224, 132, 132) !important; 
+    width:100%;
+    height: 20vh;
+    justify-content: space-around;
+     section{
+          width: 100%;
+          height: 100%;
+      }
+  }
